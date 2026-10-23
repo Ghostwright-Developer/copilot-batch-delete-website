@@ -20,7 +20,7 @@ export default function FinalCTA({ actions }: { actions: ReactNode }) {
           )}
           style={{
             background:
-              'linear-gradient(135deg, oklch(0.13 0.06 255) 0%, oklch(0.11 0.05 270) 100%)',
+              'linear-gradient(135deg, oklch(0.24 0.14 275 / 0.85) 0%, oklch(0.18 0.1 300 / 0.85) 100%)',
           }}
         >
           {/* Animated glow */}
@@ -51,7 +51,7 @@ export default function FinalCTA({ actions }: { actions: ReactNode }) {
             >
               <Image
                 src="/icons/icon128.png"
-                alt="Copilot Delete Helper"
+                alt="Clearcut Chats"
                 width={64}
                 height={64}
                 className="rounded-2xl shadow-xl transition-transform duration-300 hover:scale-110 hover:rotate-3"
@@ -65,12 +65,12 @@ export default function FinalCTA({ actions }: { actions: ReactNode }) {
               )}
               style={{ transitionDelay: '300ms' }}
             >
-              <h2 className="text-balance text-4xl font-bold text-foreground md:text-5xl">
-                Clean up Copilot faster.
+              <h2 className="text-balance text-4xl font-bold text-white md:text-5xl">
+                Clear your chats. Keep your privacy.
               </h2>
               <p className="mx-auto mt-4 max-w-md text-balance text-base leading-relaxed text-muted-foreground">
-                Free, private, and built for anyone with a long list of Copilot
-                chats they&apos;d rather not click through one by one.
+                Free, private, and built for anyone with a long list of AI chats
+                they&apos;d rather not click through one by one.
               </p>
             </div>
 

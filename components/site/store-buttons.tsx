@@ -8,8 +8,8 @@ export default function StoreButtons({ source = 'site' }: { source?: string }) {
       <div className="flex flex-wrap items-center justify-center gap-3">
         <a
           href={`/go/chrome?src=${source}`}
-          className="rounded-xl px-8 py-3 text-sm font-semibold text-primary-foreground shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-cyan/20"
-          style={{ background: 'linear-gradient(135deg, oklch(0.79 0.14 202), oklch(0.70 0.18 230))' }}
+          className="rounded-xl px-8 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[oklch(0.5_0.25_295/0.5)]"
+          style={{ background: 'linear-gradient(135deg, oklch(0.64 0.2 250), oklch(0.58 0.26 300))' }}
         >
           Add to Chrome — it&apos;s free
         </a>

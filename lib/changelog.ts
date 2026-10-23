@@ -11,6 +11,43 @@ export type Release = {
 
 export const releases: Release[] = [
   {
+    version: '1.2.0',
+    date: 'October 22, 2026',
+    title: 'Now Clearcut Chats: Copilot, ChatGPT and Claude',
+    summary:
+      'Version 1.2.0 is a new name and a bigger extension. The same fast, private bulk delete now works on ChatGPT and Claude as well as Microsoft Copilot.',
+    groups: [
+      {
+        heading: 'New: ChatGPT and Claude',
+        items: [
+          'Bulk delete now works on ChatGPT (chatgpt.com) and Claude (claude.ai), with the same checkboxes, Stop button and verified deletes.',
+          'On Claude it works on the Chats page (claude.ai/chats) and in the sidebar.',
+          'ChatGPT and Claude are optional. They stay off until you press Turn on in the side panel, and your browser asks permission for just that site. You can turn a site off again from the same panel.',
+          'Updating from 1.1.0 does not ask for new permissions or switch the extension off.',
+        ],
+      },
+      {
+        heading: 'A new name and icon',
+        items: [
+          'Copilot Chat Batch Delete Helper is now Clearcut Chats, with a new icon. Same extension, same settings.',
+        ],
+      },
+      {
+        heading: 'Loads long histories',
+        items: [
+          'Load more now keeps scrolling for as long as new chats keep arriving, so very long histories load completely. You can press Stop at any time.',
+        ],
+      },
+      {
+        heading: 'Fixes',
+        items: [
+          'Retry Failed no longer counts the same stubborn chat twice in the Failed total.',
+          'Checkboxes sit above sites that make the whole chat row clickable.',
+        ],
+      },
+    ],
+  },
+  {
     version: '1.1.0',
     date: 'October 21, 2026',
     title: 'Always ready, and a panel that stays open',

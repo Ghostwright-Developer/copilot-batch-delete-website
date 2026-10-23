@@ -11,18 +11,18 @@ const notes = [
     accent: 'cyan',
   },
   {
-    heading: 'Keep the Copilot tab focused',
-    body: 'Leave the Copilot tab alone while deletion runs. The side panel can stay open, but clicking around in Copilot can get in the way.',
+    heading: 'Keep the chat tab focused',
+    body: 'Leave the chat tab alone while deletion runs. The side panel can stay open, but clicking around on the site can get in the way.',
     accent: 'purple',
   },
   {
     heading: 'UI changes may require updates',
-    body: 'Since the extension works through the visible Copilot interface, changes to Copilot may occasionally need an extension update. If something stops working, email owen@ghostwrightweb.com.',
+    body: 'Since the extension works through each site’s visible interface, a redesign on Copilot, ChatGPT or Claude may occasionally need an extension update. If something stops working, email owen@ghostwrightweb.com.',
     accent: 'cyan',
   },
   {
-    heading: 'Not affiliated with Microsoft',
-    body: 'Copilot Delete Helper is an independent utility. It is not affiliated with, endorsed by, or connected to Microsoft in any way.',
+    heading: 'Not affiliated with Microsoft, OpenAI or Anthropic',
+    body: 'Clearcut Chats is an independent utility. It is not affiliated with, endorsed by, or connected to Microsoft, OpenAI or Anthropic. Product names belong to their owners. Deleting a chat is permanent on those sites.',
     accent: 'purple',
   },
 ]
@@ -80,7 +80,7 @@ export default function ImportantNotes() {
                   gridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
                 )}
                 style={{ 
-                  background: 'oklch(0.12 0.05 255 / 0.5)',
+                  background: 'oklch(1 0 0 / 0.045)',
                   transitionDelay: `${index * 100}ms`,
                 }}
               >

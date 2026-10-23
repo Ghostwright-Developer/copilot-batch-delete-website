@@ -4,9 +4,9 @@ import Image from 'next/image'
 import { ArrowLeft } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy — Copilot Delete Helper',
+  title: 'Privacy Policy — Clearcut Chats',
   description:
-    'Copilot Delete Helper does not collect, transmit, or store any personal data. Read the full privacy policy.',
+    'Clearcut Chats does not collect, transmit, or store any personal data. Read the full privacy policy.',
 }
 
 const sections = [
@@ -16,8 +16,8 @@ const sections = [
     content: (
       <>
         <p>
-          Copilot Delete Helper is a browser extension that helps users bulk
-          delete Microsoft Copilot conversation history. This Privacy Policy
+          Clearcut Chats is a browser extension that helps users bulk
+          delete their chat history on Microsoft Copilot, ChatGPT and Claude. This Privacy Policy
           describes how the extension handles your data — or more accurately,
           how it does not handle it at all.
         </p>
@@ -41,8 +41,8 @@ const sections = [
         </p>
         <ul>
           <li>Your name, email address, or any account details</li>
-          <li>Your Copilot chats, prompts, or conversation content</li>
-          <li>Browsing history or activity outside the Copilot page</li>
+          <li>Your chats, prompts, or conversation content on any site</li>
+          <li>Browsing history or activity outside the chat pages it runs on</li>
           <li>Device identifiers, IP addresses, or location data</li>
           <li>Any analytics, usage, or telemetry data</li>
         </ul>
@@ -55,19 +55,20 @@ const sections = [
     content: (
       <>
         <p>
-          Copilot Delete Helper operates entirely within your browser, on
-          Microsoft Copilot pages and on the chat page of Microsoft 365 Copilot.
+          Clearcut Chats operates entirely within your browser, on
+          Microsoft Copilot pages, on the chat page of Microsoft 365 Copilot, and on
+          ChatGPT (chatgpt.com) and Claude (claude.ai) once you turn each of those on in the side panel.
           When you use the extension, it:
         </p>
         <ul>
-          <li>Injects checkboxes into the visible Copilot chat list in your browser</li>
+          <li>Injects checkboxes into the visible chat list in your browser</li>
           <li>
             Reads which conversations you have selected using local in-page
             JavaScript
           </li>
           <li>
             Simulates the same delete actions you would take manually, using
-            the visible Copilot UI
+            the site&apos;s visible interface
           </li>
           <li>Shows progress and controls in your browser&apos;s side panel</li>
         </ul>
@@ -95,7 +96,7 @@ const sections = [
           </li>
           <li>
             <strong className="text-foreground">scripting</strong> — lets the extension start itself in
-            Copilot tabs you already have open, so you do not need to refresh after installing or updating.
+            chat tabs you already have open, so you do not need to refresh after installing or updating.
           </li>
           <li>
             <strong className="text-foreground">sidePanel</strong> — shows the controls in the browser side panel.
@@ -105,6 +106,12 @@ const sections = [
             mode) and a local counter of chats cleared, in your browser only.
           </li>
         </ul>
+        <p>
+          <strong className="text-foreground">Optional access to ChatGPT and Claude</strong> (chatgpt.com, chat.openai.com
+          and claude.ai). This is optional: the extension cannot see those sites until you press Turn on in the side panel
+          and allow that one site in your browser&apos;s permission prompt. You can turn it off again from the same panel,
+          or from your browser&apos;s extension settings.
+        </p>
         <p>
           The extension does not request access to any other websites, your
           browsing history, stored passwords, or any other sensitive browser
@@ -133,7 +140,7 @@ const sections = [
       <>
         <p>
           After you install the extension, and after a major update, it opens a welcome or what&apos;s-new page
-          on this website. The address includes only the extension version number (for example <code>?v=1.1.0</code>)
+          on this website. The address includes only the extension version number (for example <code>?v=1.2.0</code>)
           and whether it was an install or an update. No personal information is included, and this site does
           not use cookies, analytics or tracking.
         </p>
@@ -166,22 +173,22 @@ const sections = [
     content: (
       <>
         <p>
-          Copilot Delete Helper does not integrate with any third-party services,
+          Clearcut Chats does not integrate with any third-party services,
           APIs, or backends. It does not use:
         </p>
         <ul>
           <li>Analytics platforms (e.g. Google Analytics, Mixpanel)</li>
           <li>Crash reporting services (e.g. Sentry, Bugsnag)</li>
           <li>Remote configuration or feature-flag services</li>
-          <li>Any Microsoft or Copilot private APIs</li>
+          <li>Any private APIs of Microsoft, OpenAI or Anthropic</li>
         </ul>
         <p>
-          The extension only communicates with the visible Copilot web page
+          The extension only communicates with the visible chat web page
           running in your browser, and with its own side panel.
         </p>
         <p>
-          Copilot Delete Helper is not affiliated with, endorsed by, or
-          connected to Microsoft Corporation in any way.
+          Clearcut Chats is not affiliated with, endorsed by, or
+          connected to Microsoft Corporation, OpenAI or Anthropic in any way. Product names belong to their owners.
         </p>
       </>
     ),
@@ -215,7 +222,7 @@ const sections = [
         </p>
         <p>
           This extension is an independent project and is not affiliated with
-          Microsoft.
+          Microsoft, OpenAI or Anthropic.
         </p>
       </>
     ),
@@ -224,7 +231,7 @@ const sections = [
 
 export default function PrivacyPage() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen text-foreground">
       {/* Top nav */}
       <header className="border-b border-border/60">
         <div className="mx-auto flex max-w-4xl items-center gap-4 px-6 py-4">
@@ -238,12 +245,12 @@ export default function PrivacyPage() {
           <div className="ml-auto flex items-center gap-2">
             <Image
               src="/icons/icon32.png"
-              alt="Copilot Delete Helper icon"
+              alt="Clearcut Chats icon"
               width={20}
               height={20}
               className="rounded"
             />
-            <span className="text-xs text-muted-foreground">Copilot Delete Helper</span>
+            <span className="text-xs text-muted-foreground">Clearcut Chats</span>
           </div>
         </div>
       </header>
@@ -259,13 +266,13 @@ export default function PrivacyPage() {
           </p>
           <h1 className="text-4xl font-bold text-foreground">Privacy Policy</h1>
           <p className="mt-3 text-sm text-muted-foreground">
-            <strong className="text-foreground">Product:</strong> Copilot Delete Helper
+            <strong className="text-foreground">Product:</strong> Clearcut Chats (formerly Copilot Chat Batch Delete Helper)
             &nbsp;&bull;&nbsp;
             <strong className="text-foreground">Effective date:</strong>{' '}
-            October 21, 2026
+            October 22, 2026
           </p>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
-            Copilot Delete Helper is built with privacy as a core design
+            Clearcut Chats is built with privacy as a core design
             principle. This document explains exactly how the extension works
             and confirms that it collects no personal data.
           </p>

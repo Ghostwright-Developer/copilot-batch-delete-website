@@ -4,7 +4,7 @@ import { releases } from '@/lib/changelog'
 
 export const metadata: Metadata = {
   title: 'Changelog',
-  description: 'Every release of Copilot Delete Helper and what changed.',
+  description: 'Every release of Clearcut Chats and what changed.',
   alternates: { canonical: '/changelog' },
 }
 

@@ -5,7 +5,7 @@ import { SITE, mailto } from '@/lib/site'
 
 export const metadata: Metadata = {
   title: 'Support',
-  description: 'Help with Copilot Delete Helper: common questions and how to reach me.',
+  description: 'Help with Clearcut Chats: common questions and how to reach me.',
   alternates: { canonical: '/support' },
 }
 
@@ -19,11 +19,11 @@ export default function Support() {
       </p>
       <div className="mt-6 rounded-2xl border border-border bg-card p-5">
         <p className="text-sm font-semibold">Email</p>
-        <a className="text-cyan underline-offset-4 hover:underline" href={mailto('Copilot Delete Helper support')}>
+        <a className="text-cyan underline-offset-4 hover:underline" href={mailto('Clearcut Chats support')}>
           {SITE.email}
         </a>
         <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
-          Helpful to include: your browser and version, which Copilot address you were on, and what the side panel
+          Helpful to include: your browser and version, which site (Copilot, ChatGPT or Claude) and address you were on, and what the side panel
           said. Please don&apos;t send chat contents.
         </p>
       </div>

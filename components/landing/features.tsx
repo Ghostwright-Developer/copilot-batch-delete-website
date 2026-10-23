@@ -6,7 +6,7 @@ import {
   MousePointerClick,
   Gauge,
   RefreshCw,
-  Activity,
+  Globe,
   HardDrive,
   ShieldCheck,
 } from 'lucide-react'
@@ -14,62 +14,14 @@ import { useAnimateOnScroll } from '@/hooks/use-animate-on-scroll'
 import { cn } from '@/lib/utils'
 
 const features = [
-  {
-    icon: Trash2,
-    title: 'Bulk Delete Chats',
-    description:
-      'Select and remove dozens or hundreds of Copilot conversations at once instead of deleting them one by one.',
-    accent: 'cyan',
-  },
-  {
-    icon: CheckSquare,
-    title: 'Side Panel That Stays Open',
-    description:
-      'The controls live in your browser\'s side panel and stay open while you work. Checkboxes appear right on your chat list.',
-    accent: 'purple',
-  },
-  {
-    icon: MousePointerClick,
-    title: 'Shift-Click Range Selection',
-    description:
-      'Hold Shift and click to select a range of conversations instantly — no need to check each one.',
-    accent: 'cyan',
-  },
-  {
-    icon: Gauge,
-    title: 'Works Right Away',
-    description:
-      'No page refresh after installing or updating. Open the panel on Copilot and it connects on its own.',
-    accent: 'purple',
-  },
-  {
-    icon: RefreshCw,
-    title: 'Verified Deletions',
-    description:
-      'A chat only counts as deleted once it has actually left your list. Anything Copilot refuses is reported and can be retried.',
-    accent: 'cyan',
-  },
-  {
-    icon: Activity,
-    title: 'Copilot & Microsoft 365',
-    description:
-      'Works on Microsoft Copilot and on the Microsoft 365 Copilot Chat page, and only on the chat pages.',
-    accent: 'purple',
-  },
-  {
-    icon: HardDrive,
-    title: 'Local-Only Operation',
-    description:
-      'Everything runs in your browser. Your chats never go anywhere, and there is no account.',
-    accent: 'cyan',
-  },
-  {
-    icon: ShieldCheck,
-    title: 'Minimal Permissions',
-    description:
-      'Only three permissions, and access is limited to Copilot sites. On Microsoft 365 hosts it is limited to the /chat pages.',
-    accent: 'purple',
-  },
+  { icon: Trash2, title: 'Bulk Delete Chats', description: 'Select and remove dozens or hundreds of conversations at once instead of deleting them one by one.', accent: 'cyan' },
+  { icon: Globe, title: 'Copilot, ChatGPT and Claude', description: 'One extension for three sites. Copilot works right away. ChatGPT and Claude are optional, and you turn each one on yourself.', accent: 'purple' },
+  { icon: CheckSquare, title: 'Side Panel That Stays Open', description: 'The controls live in your browser\'s side panel. Checkboxes appear right on your chat list.', accent: 'cyan' },
+  { icon: MousePointerClick, title: 'Shift-Click Range Selection', description: 'Hold Shift and click to select a range of conversations instantly, or use Select all loaded.', accent: 'purple' },
+  { icon: Gauge, title: 'Loads Your Whole History', description: 'Load more scrolls the list for you, even for very long histories, until everything is in view.', accent: 'cyan' },
+  { icon: RefreshCw, title: 'Verified Deletions', description: 'A chat only counts as deleted once it has actually left your list. Anything a site refuses is reported and can be retried.', accent: 'purple' },
+  { icon: HardDrive, title: 'Local-Only Operation', description: 'Everything runs in your browser. Your chats never go anywhere, and there is no account.', accent: 'cyan' },
+  { icon: ShieldCheck, title: 'Access You Control', description: 'Only three permissions. ChatGPT and Claude access is off until you turn it on, and you can turn it off again any time.', accent: 'purple' },
 ]
 
 export default function Features() {
@@ -90,11 +42,11 @@ export default function Features() {
           <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-cyan">
             What it does
           </p>
-          <h2 className="text-balance text-4xl font-bold text-foreground md:text-5xl">
+          <h2 className="text-balance text-4xl font-bold text-white md:text-5xl">
             Everything you need to clean up faster
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-balance text-base leading-relaxed text-muted-foreground">
-            Built for people who use Copilot every day and want to take
+            Built for people who use AI chat every day and want to take
             control of their conversation history.
           </p>
         </div>
@@ -113,13 +65,12 @@ export default function Features() {
               <div
                 key={feature.title}
                 className={cn(
-                  'group relative rounded-2xl border border-border bg-card p-6 transition-all duration-500 ease-out',
+                  'glass group relative rounded-2xl p-6 transition-all duration-500 ease-out',
                   'hover:scale-[1.03] hover:border-opacity-60',
                   gridVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                 )}
                 style={{
-                  background: 'var(--card)',
-                  transitionDelay: gridVisible ? `${index * 75}ms` : '0ms',
+                                  transitionDelay: gridVisible ? `${index * 75}ms` : '0ms',
                   ['--glow-color' as string]: glowColor,
                   ['--border-hover' as string]: borderHoverColor,
                 }}

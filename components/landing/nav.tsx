@@ -30,8 +30,8 @@ export default function Nav() {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 border-b backdrop-blur-md transition-all duration-500',
         scrolled 
-          ? 'border-border/60 bg-background/90 shadow-lg shadow-black/5' 
-          : 'border-transparent bg-background/50',
+          ? 'border-white/10 bg-[oklch(0.1_0.05_268/0.78)] shadow-lg shadow-black/20' 
+          : 'border-transparent bg-[oklch(0.1_0.05_268/0.35)]',
         visible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4'
       )}
     >
@@ -43,13 +43,13 @@ export default function Nav() {
         >
           <Image
             src="/icons/icon48.png"
-            alt="Copilot Delete Helper icon"
+            alt="Clearcut Chats icon"
             width={32}
             height={32}
             className="rounded-lg transition-transform duration-300 hover:rotate-6"
           />
           <span className="text-sm font-semibold text-foreground">
-            Copilot Delete Helper
+            Clearcut Chats
           </span>
         </Link>
 
@@ -87,7 +87,7 @@ export default function Nav() {
         >
           <a
             href="/go/install?src=nav"
-            className="rounded-full border border-cyan/30 bg-cyan/5 px-4 py-1.5 text-xs font-medium text-cyan transition-all duration-300 hover:bg-cyan/10 hover:border-cyan/50 hover:shadow-lg hover:shadow-cyan/10"
+            className="rounded-full bg-gradient-to-r from-[oklch(0.62_0.2_250)] to-[oklch(0.58_0.26_300)] px-4 py-1.5 text-xs font-semibold text-white shadow-lg shadow-[oklch(0.5_0.25_295/0.45)] transition-all duration-300 hover:scale-105"
           >
             Get the extension
           </a>

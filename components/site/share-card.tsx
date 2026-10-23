@@ -20,12 +20,12 @@ export default function ShareCard({
     { label: 'X', href: `https://x.com/intent/post?text=${encodeURIComponent(text)}&url=${encodeURIComponent(link)}` },
     {
       label: 'Reddit',
-      href: `https://www.reddit.com/submit?url=${encodeURIComponent(link)}&title=${encodeURIComponent('Free extension to bulk delete Microsoft Copilot chats')}`,
+      href: `https://www.reddit.com/submit?url=${encodeURIComponent(link)}&title=${encodeURIComponent('Free extension to bulk delete Copilot, ChatGPT and Claude chats')}`,
     },
     { label: 'LinkedIn', href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(link)}` },
     {
       label: 'Email',
-      href: `mailto:?subject=${encodeURIComponent('Bulk delete your Copilot chats')}&body=${encodeURIComponent(`${text}\n\n${link}`)}`,
+      href: `mailto:?subject=${encodeURIComponent('Bulk delete your AI chats')}&body=${encodeURIComponent(`${text}\n\n${link}`)}`,
     },
   ]
 
@@ -42,7 +42,7 @@ export default function ShareCard({
   return (
     <section
       className="rounded-3xl border border-border/80 p-8"
-      style={{ background: 'linear-gradient(135deg, oklch(0.13 0.06 255) 0%, oklch(0.11 0.05 270) 100%)' }}
+      style={{ background: 'linear-gradient(160deg, oklch(1 0 0 / 0.08), oklch(1 0 0 / 0.025))' }}
     >
       <h2 className="text-2xl font-bold text-foreground">{heading}</h2>
       <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">{body}</p>

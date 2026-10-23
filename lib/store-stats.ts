@@ -89,7 +89,7 @@ export async function getStoreStats(): Promise<StoreStats> {
     const res = await fetch(SITE.chrome.url, {
       next: { revalidate: 21600 },
       headers: {
-        'user-agent': `Mozilla/5.0 (compatible; CopilotDeleteHelperSite/${SITE.version}; +${SITE.url})`,
+        'user-agent': `Mozilla/5.0 (compatible; ClearcutChatsSite/${SITE.version}; +${SITE.url})`,
         'accept-language': 'en-US,en;q=0.9',
       },
       signal: AbortSignal.timeout(7000),

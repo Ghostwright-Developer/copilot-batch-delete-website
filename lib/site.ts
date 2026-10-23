@@ -4,13 +4,13 @@
 const CHROME_ID = 'ndhlafbieanmkgipgihhpgoelgnhmide'
 
 export const SITE = {
-  name: 'Copilot Delete Helper',
-  fullName: 'Copilot Chat Batch Delete Helper',
-  tagline: 'Bulk delete Microsoft Copilot chats',
+  name: 'Clearcut Chats',
+  fullName: 'Clearcut Chats: Bulk Delete for AI Chats',
+  tagline: 'Bulk delete AI chats in Copilot, ChatGPT and Claude',
   // Where this site is hosted. Set NEXT_PUBLIC_SITE_URL in Vercel if you use another address.
   url: (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://copilot.ghostwrightweb.com').replace(/\/$/, ''),
   email: 'owen@ghostwrightweb.com',
-  version: '1.1.0',
+  version: '1.2.0',
   github: 'https://github.com/Cyberhawk-9/copilot-chat-deletion',
   chrome: {
     id: CHROME_ID,
@@ -25,11 +25,11 @@ export const SITE = {
     reviewUrl: process.env.NEXT_PUBLIC_EDGE_REVIEW_URL ?? process.env.NEXT_PUBLIC_EDGE_URL ?? '',
   },
   shareText:
-    'I got tired of deleting Copilot chats one by one, so I use this free extension to bulk delete them.',
+    'I got tired of deleting AI chats one by one, so I use this free extension to bulk delete Copilot, ChatGPT and Claude chats.',
 } as const
 
 export const hasEdge = () => Boolean(SITE.edge.url)
 
-export function mailto(subject = 'Copilot Delete Helper') {
+export function mailto(subject = 'Clearcut Chats') {
   return `mailto:${SITE.email}?subject=${encodeURIComponent(subject)}`
 }

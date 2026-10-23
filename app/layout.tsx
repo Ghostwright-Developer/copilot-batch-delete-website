@@ -11,18 +11,18 @@ const inter = Inter({
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://copilot.ghostwrightweb.com'
 
 export const viewport: Viewport = {
-  themeColor: '#060d1f',
+  themeColor: '#0a0d24',
 }
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Copilot Delete Helper — Bulk Delete Microsoft Copilot Chats',
-    template: '%s — Copilot Delete Helper',
+    default: 'Clearcut Chats — Bulk Delete Copilot, ChatGPT and Claude Chats',
+    template: '%s — Clearcut Chats',
   },
   description:
-    'Free browser extension to bulk delete your Microsoft Copilot and Microsoft 365 Copilot chats. Side panel, no refresh, no tracking, no servers.',
-  keywords: ['Copilot', 'Microsoft Copilot', 'Microsoft 365 Copilot', 'delete chats', 'bulk delete', 'browser extension', 'privacy'],
+    'Free browser extension to bulk delete your Microsoft Copilot, ChatGPT and Claude chats. Side panel, no refresh, no tracking, no servers.',
+  keywords: ['Clearcut Chats', 'delete ChatGPT chats', 'delete Claude chats', 'delete Copilot chats', 'bulk delete chats', 'bulk delete', 'browser extension', 'privacy'],
   alternates: { canonical: '/' },
   authors: [{ name: 'Ghostwright Web Development' }],
   icons: {
@@ -34,16 +34,16 @@ export const metadata: Metadata = {
     apple: '/apple-icon.png',
   },
   openGraph: {
-    title: 'Copilot Delete Helper',
-    description: 'Bulk delete Microsoft Copilot chats. Fast, private and free.',
+    title: 'Clearcut Chats',
+    description: 'Bulk delete your AI chats. Fast, private and free.',
     type: 'website',
-    siteName: 'Copilot Delete Helper',
-    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Copilot Delete Helper' }],
+    siteName: 'Clearcut Chats',
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Clearcut Chats' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Copilot Delete Helper',
-    description: 'Bulk delete Microsoft Copilot chats. Fast, private and free.',
+    title: 'Clearcut Chats',
+    description: 'Bulk delete your AI chats. Fast, private and free.',
     images: ['/og.png'],
   },
 }
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
 const appLd = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
-  name: 'Copilot Chat Batch Delete Helper',
+  name: 'Clearcut Chats',
   applicationCategory: 'BrowserApplication',
   operatingSystem: 'Chrome, Edge',
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },

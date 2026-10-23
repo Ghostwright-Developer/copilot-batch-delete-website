@@ -12,7 +12,7 @@ export default function PageShell({
   width?: string
 }) {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen text-foreground">
       <header className="border-b border-border/60">
         <div className="mx-auto flex max-w-5xl items-center gap-4 px-6 py-4">
           <Link href="/" className="flex items-center gap-2.5">
@@ -31,7 +31,7 @@ export default function PageShell({
             </Link>
             <a
               href="/go/install"
-              className="rounded-full border border-cyan/30 bg-cyan/5 px-4 py-1.5 text-xs font-medium text-cyan transition-colors hover:bg-cyan/10"
+              className="rounded-full bg-gradient-to-r from-[oklch(0.62_0.2_250)] to-[oklch(0.58_0.26_300)] px-4 py-1.5 text-xs font-semibold text-white shadow-lg shadow-[oklch(0.5_0.25_295/0.45)] transition-transform hover:scale-105"
             >
               Get the extension
             </a>

@@ -5,7 +5,7 @@ import { latest } from '@/lib/changelog'
 
 export const metadata: Metadata = {
   title: "What's new",
-  description: 'What changed in the latest version of Copilot Delete Helper.',
+  description: 'What changed in the latest version of Clearcut Chats.',
   robots: { index: false, follow: false },
 }
 

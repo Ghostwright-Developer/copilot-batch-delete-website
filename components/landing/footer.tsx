@@ -11,7 +11,7 @@ export default function Footer() {
   const { ref: footerRef, isVisible: footerVisible } = useAnimateOnScroll()
 
   return (
-    <footer ref={footerRef} className="border-t border-border/60 bg-background">
+    <footer ref={footerRef} className="border-t border-white/10 bg-[oklch(0.08_0.04_268/0.7)] backdrop-blur">
       <div className="mx-auto max-w-6xl px-6 py-12">
         <div className="flex flex-col items-center gap-8 md:flex-row md:items-start md:justify-between">
           {/* Brand */}
@@ -27,20 +27,20 @@ export default function Footer() {
             >
               <Image
                 src="/icons/icon32.png"
-                alt="Copilot Delete Helper icon"
+                alt="Clearcut Chats icon"
                 width={24}
                 height={24}
                 className="rounded-md transition-transform duration-300 hover:rotate-12"
               />
               <span className="text-sm font-semibold text-foreground">
-                Copilot Delete Helper
+                Clearcut Chats
               </span>
             </Link>
             <p className="max-w-xs text-center text-xs leading-relaxed text-muted-foreground md:text-left">
-              A privacy-first browser extension for cleaning up Microsoft Copilot chat history.
+              A privacy-first browser extension for cleaning up your Copilot, ChatGPT and Claude chat history.
             </p>
             <p className="text-xs text-muted-foreground/60">
-              Not affiliated with Microsoft.
+              Not affiliated with Microsoft, OpenAI or Anthropic.
             </p>
           </div>
 
@@ -85,7 +85,7 @@ export default function Footer() {
           style={{ transitionDelay: '400ms' }}
         >
           <p className="text-xs text-muted-foreground/50">
-            &copy; {currentYear} Copilot Delete Helper by Ghostwright Web Development. All rights reserved.
+            &copy; {currentYear} Clearcut Chats by Ghostwright Web Development. All rights reserved.
           </p>
         </div>
       </div>

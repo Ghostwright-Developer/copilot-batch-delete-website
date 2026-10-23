@@ -5,9 +5,9 @@
 
 :root {
   /* Dark navy — always-dark theme */
-  --background: oklch(0.09 0.04 255);
+  --background: oklch(0.105 0.05 268);
   --foreground: oklch(0.96 0.01 240);
-  --card: oklch(0.13 0.05 255);
+  --card: oklch(1 0 0 / 0.055);
   --card-foreground: oklch(0.96 0.01 240);
   --popover: oklch(0.13 0.05 255);
   --popover-foreground: oklch(0.96 0.01 240);
@@ -15,13 +15,13 @@
   --primary-foreground: oklch(0.09 0.04 255);
   --secondary: oklch(0.63 0.22 293);
   --secondary-foreground: oklch(0.96 0.01 240);
-  --muted: oklch(0.17 0.06 255);
+  --muted: oklch(1 0 0 / 0.07);
   --muted-foreground: oklch(0.56 0.04 240);
   --accent: oklch(0.17 0.06 255);
   --accent-foreground: oklch(0.96 0.01 240);
   --destructive: oklch(0.65 0.22 27);
   --destructive-foreground: oklch(0.96 0.01 240);
-  --border: oklch(0.22 0.06 255);
+  --border: oklch(0.28 0.07 272);
   --input: oklch(0.17 0.06 255);
   --ring: oklch(0.79 0.14 202);
   --radius: 0.75rem;
@@ -37,6 +37,8 @@
   --cyan: oklch(0.79 0.14 202);
   --purple: oklch(0.63 0.22 293);
   --navy-glow: oklch(0.20 0.09 255);
+  --magenta: oklch(0.66 0.26 330);
+  --blue: oklch(0.68 0.19 240);
 }
 
 @theme inline {
@@ -76,6 +78,8 @@
   --color-cyan: var(--cyan);
   --color-purple: var(--purple);
   --color-navy-glow: var(--navy-glow);
+  --color-magenta: var(--magenta);
+  --color-blue: var(--blue);
 }
 
 @layer base {
@@ -83,6 +87,48 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply text-foreground font-sans antialiased;
+    background-color: oklch(0.105 0.05 268);
+    background-image:
+      radial-gradient(60rem 38rem at 85% -5%, oklch(0.42 0.24 295 / 0.55), transparent 65%),
+      radial-gradient(52rem 34rem at -5% 25%, oklch(0.45 0.2 250 / 0.45), transparent 62%),
+      radial-gradient(48rem 30rem at 70% 70%, oklch(0.40 0.22 310 / 0.30), transparent 65%),
+      radial-gradient(40rem 26rem at 10% 95%, oklch(0.40 0.18 240 / 0.30), transparent 65%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+}
+
+
+@layer utilities {
+  .text-gradient {
+    background-image: linear-gradient(95deg, oklch(0.80 0.15 215) 0%, oklch(0.66 0.22 280) 50%, oklch(0.68 0.27 330) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .text-gradient-soft {
+    background-image: linear-gradient(95deg, oklch(0.72 0.2 270), oklch(0.68 0.27 320));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .glass {
+    background: linear-gradient(160deg, oklch(1 0 0 / 0.07), oklch(1 0 0 / 0.025));
+    border: 1px solid oklch(1 0 0 / 0.10);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 20px 60px -20px oklch(0.05 0.05 270 / 0.8), inset 0 1px 0 oklch(1 0 0 / 0.08);
+  }
+  .ring-glow {
+    border: 1.5px solid oklch(0.68 0.2 285 / 0.9);
+    box-shadow: 0 0 22px oklch(0.6 0.25 290 / 0.55), inset 0 0 14px oklch(0.6 0.25 290 / 0.25);
+  }
+  .grid-fade {
+    background-image: linear-gradient(oklch(1 0 0 / 0.035) 1px, transparent 1px), linear-gradient(90deg, oklch(1 0 0 / 0.035) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000 20%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000 20%, transparent 75%);
   }
 }

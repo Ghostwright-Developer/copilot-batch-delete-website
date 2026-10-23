@@ -6,9 +6,9 @@ import { cn } from '@/lib/utils'
 const steps = [
   {
     number: '01',
-    title: 'Open Copilot and click the extension',
+    title: 'Open your chat site and click the extension',
     description:
-      'Go to Microsoft Copilot or the Microsoft 365 Copilot chat page, then click the extension icon. The side panel opens and connects by itself, with no refresh. Use Load More to bring older chats into view.',
+      'Go to Microsoft Copilot, ChatGPT or Claude, then click the extension icon. On ChatGPT or Claude, press Turn on once and allow that one site. The side panel connects by itself, with no refresh. Use Load more to bring older chats into view.',
   },
   {
     number: '02',
@@ -20,7 +20,7 @@ const steps = [
     number: '03',
     title: 'Run deletion and let it work',
     description:
-      'Confirm in the panel and the extension works through Copilot&apos;s own delete flow for each chat. Progress shows in the panel, and you can stop at any time.',
+      'Confirm in the panel and the extension works through each site’s own delete flow, one chat at a time. Progress shows in the panel, and you can stop at any time.',
   },
 ]
 

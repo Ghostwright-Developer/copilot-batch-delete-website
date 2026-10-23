@@ -10,7 +10,7 @@ const bullets = [
   { icon: Wifi, label: 'No external servers' },
   { icon: UserX, label: 'No account access' },
   { icon: Code2, label: 'No hidden or private APIs' },
-  { icon: ShieldCheck, label: 'Only Copilot sites, and only /chat on Microsoft 365' },
+  { icon: ShieldCheck, label: 'Only the sites you allow, and only /chat on Microsoft 365' },
 ]
 
 export default function PrivacySection() {
@@ -42,7 +42,7 @@ export default function PrivacySection() {
           )}
           style={{
             background:
-              'linear-gradient(135deg, oklch(0.13 0.06 255) 0%, oklch(0.11 0.05 270) 100%)',
+              'linear-gradient(160deg, oklch(1 0 0 / 0.08), oklch(1 0 0 / 0.025))',
           }}
         >
           {/* Glow on hover */}
@@ -102,7 +102,7 @@ export default function PrivacySection() {
                 )}
                 style={{ transitionDelay: '350ms' }}
               >
-                Copilot Delete Helper runs locally in your browser. It does not
+                Clearcut Chats runs locally in your browser. It does not
                 collect, transmit, sell, or store your conversations or personal
                 data. The only things it saves are your own settings, on your own device.
               </p>
