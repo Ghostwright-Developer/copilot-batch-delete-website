@@ -1,6 +1,6 @@
 import { SITE, hasEdge } from '@/lib/site'
 
-// Install buttons. Chrome is always there. The Edge button appears once an Edge URL is set in lib/site.ts.
+// Install buttons. Chrome is always there. The Edge button shows whenever an Edge URL is set in lib/site.ts.
 export default function StoreButtons({ source = 'site' }: { source?: string }) {
   const edge = hasEdge()
   return (
@@ -24,8 +24,8 @@ export default function StoreButtons({ source = 'site' }: { source?: string }) {
       </div>
       <p className="text-xs text-muted-foreground">
         {edge
-          ? 'Works in Chrome, Edge, Brave and other Chromium browsers.'
-          : 'Works in Chrome, Brave and other Chromium browsers. The Edge Add-ons listing is on its way. Edge users can install from the Chrome Web Store today.'}
+          ? 'Available on the Chrome Web Store and Microsoft Edge Add-ons. Also works in Brave and other Chromium browsers.'
+          : 'Works in Chrome, Brave and other Chromium browsers.'}
       </p>
     </div>
   )

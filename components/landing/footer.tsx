@@ -39,7 +39,7 @@ export default function Footer() {
             <p className="max-w-xs text-center text-xs leading-relaxed text-muted-foreground md:text-left">
               A privacy-first browser extension for cleaning up your Copilot, ChatGPT and Claude chat history.
             </p>
-            <p className="text-xs text-muted-foreground/60">
+            <p className="text-xs text-muted-foreground">
               Not affiliated with Microsoft, OpenAI or Anthropic.
             </p>
           </div>
@@ -84,7 +84,7 @@ export default function Footer() {
           )}
           style={{ transitionDelay: '400ms' }}
         >
-          <p className="text-xs text-muted-foreground/50">
+          <p className="text-xs text-muted-foreground">
             &copy; {currentYear} Clearcut Chats by Ghostwright Web Development. All rights reserved.
           </p>
         </div>

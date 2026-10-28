@@ -43,6 +43,9 @@ export const releases: Release[] = [
         items: [
           'Retry Failed no longer counts the same stubborn chat twice in the Failed total.',
           'Checkboxes sit above sites that make the whole chat row clickable.',
+          'Deleting works on Microsoft 365 Copilot layouts where a chat’s menu button only shows on hover.',
+          'Checkboxes and ticks no longer flicker or disappear when Copilot redraws the chat list as you scroll.',
+          'The suggestion buttons under the message box can no longer be mistaken for chats.',
         ],
       },
     ],

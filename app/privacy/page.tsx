@@ -343,7 +343,7 @@ export default function PrivacyPage() {
             </a>
             .
           </p>
-          <p className="mt-2 text-xs text-muted-foreground/50">
+          <p className="mt-2 text-xs text-muted-foreground">
             Not affiliated with Microsoft.
           </p>
         </div>

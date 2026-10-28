@@ -37,7 +37,6 @@ export default function Hero({ actions, stats }: { actions: ReactNode; stats?: R
         >
           <div className="flex items-center gap-4">
             <div className="relative">
-              <div aria-hidden="true" className="absolute inset-0 -m-3 rounded-[2rem] bg-[oklch(0.55_0.25_290/0.55)] blur-2xl" />
               <Image src="/icons/icon128.png" alt="Clearcut Chats icon" width={84} height={84} priority className="ring-glow relative rounded-[1.4rem]" />
             </div>
             <div className="hidden items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 sm:flex">
@@ -88,7 +87,6 @@ export default function Hero({ actions, stats }: { actions: ReactNode; stats?: R
           )}
           style={{ perspective: '1800px' }}
         >
-          <div aria-hidden="true" className="absolute -inset-10 rounded-full bg-[oklch(0.5_0.26_295/0.35)] blur-3xl" />
           <div
             aria-hidden="true"
             className="absolute -right-10 top-10 hidden w-[78%] opacity-40 blur-[3px] sm:block"

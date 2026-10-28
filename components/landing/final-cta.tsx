@@ -86,7 +86,7 @@ export default function FinalCTA({ actions }: { actions: ReactNode }) {
 
             <p
               className={cn(
-                'text-xs text-muted-foreground/60 transition-all duration-700',
+                'text-xs text-muted-foreground transition-all duration-700',
                 sectionVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
               )}
               style={{ transitionDelay: '600ms' }}

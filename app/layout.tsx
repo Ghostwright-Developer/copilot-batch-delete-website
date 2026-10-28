@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import AuroraBackground from '@/components/site/aurora-background'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -8,7 +9,7 @@ const inter = Inter({
   display: 'swap',
 })
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://copilot.ghostwrightweb.com'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://clearcutchats.ghostwrightweb.com'
 
 export const viewport: Viewport = {
   themeColor: '#0a0d24',
@@ -67,6 +68,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} bg-background`}>
       <body className="font-sans antialiased">
+        <AuroraBackground />
         {children}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appLd) }} />
       </body>
