@@ -88,7 +88,6 @@
   }
   body {
     @apply text-foreground font-sans antialiased;
-    background-color: oklch(0.105 0.05 268);
     min-height: 100vh;
   }
 }
