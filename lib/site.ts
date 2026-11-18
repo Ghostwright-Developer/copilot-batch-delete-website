@@ -14,7 +14,7 @@ export const SITE = {
   email: 'owen@ghostwrightweb.com',
   // Paste your Google Form link here (or set NEXT_PUBLIC_FEEDBACK_FORM_URL in Vercel). Empty = the form buttons are hidden.
   feedbackForm: process.env.NEXT_PUBLIC_FEEDBACK_FORM_URL ?? 'https://docs.google.com/forms/d/e/1FAIpQLSebn1iYen8ZFo0rXkqIAXHhHLPfvnHFc_iaE-Sj95eNaAaAkA/viewform',
-  version: '1.2.0',
+  version: '1.2.1',
   github: 'https://github.com/Cyberhawk-9/copilot-chat-deletion',
   chrome: {
     id: CHROME_ID,

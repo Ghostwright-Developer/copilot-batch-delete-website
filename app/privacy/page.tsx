@@ -140,7 +140,7 @@ const sections = [
       <>
         <p>
           After you install the extension, and after a major update, it opens a welcome or what&apos;s-new page
-          on this website. The address includes only the extension version number (for example <code>?v=1.2.0</code>)
+          on this website. The address includes only the extension version number (for example <code>?v=1.2.1</code>)
           and whether it was an install or an update. No personal information is included, and this site does
           not use cookies, analytics or tracking.
         </p>

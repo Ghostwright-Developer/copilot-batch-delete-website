@@ -11,6 +11,33 @@ export type Release = {
 
 export const releases: Release[] = [
   {
+    version: '1.2.1',
+    date: 'November 18, 2026',
+    title: 'Small fixes, and an easier way to reach me',
+    summary:
+      'Version 1.2.1 is a round of small improvements: clearer messages, delete that works when a site is not in English, and an easy way to email me or vote on what comes next.',
+    groups: [
+      {
+        heading: 'New',
+        items: [
+          'The version number now shows in the panel header.',
+          'If the page reloads or sends you to sign in partway through a run, the panel tells you what happened and what to try.',
+          'A "Having trouble? Email Owen" line appears whenever something goes wrong, and the footer says I reply to every message.',
+          'A small More menu in the panel footer opens the roadmap, where you can vote on what I build next, and links to the listing in your other browser.',
+          'After you remove the extension, a short feedback page opens on this website so you can tell me what went wrong. Nothing is collected unless you email.',
+        ],
+      },
+      {
+        heading: 'Fixes',
+        items: [
+          'Delete no longer depends on the site being in English. It now recognises delete in Portuguese, Spanish, French, German, Dutch, Italian and more.',
+          'Leave a review and Share open the right store for your browser: Microsoft Edge Add-ons in Edge, the Chrome Web Store everywhere else.',
+          'Cleaner wording in the panel, including singular and plural counts and a clearer finished message.',
+        ],
+      },
+    ],
+  },
+  {
     version: '1.2.0',
     date: 'October 22, 2026',
     title: 'Now Clearcut Chats: Copilot, ChatGPT and Claude',
