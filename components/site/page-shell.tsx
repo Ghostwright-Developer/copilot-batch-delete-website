@@ -20,6 +20,9 @@ export default function PageShell({
             <span className="text-sm font-semibold text-foreground">{SITE.name}</span>
           </Link>
           <nav aria-label="Main" className="ml-auto flex items-center gap-5 text-sm text-muted-foreground">
+            <Link href="/roadmap" className="hidden transition-colors hover:text-foreground sm:inline">
+              Roadmap
+            </Link>
             <Link href="/support" className="transition-colors hover:text-foreground">
               Support
             </Link>

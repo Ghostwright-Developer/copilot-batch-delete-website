@@ -34,6 +34,11 @@ export const faqs: { q: string; a: React.ReactNode; text: string }[] = [
     a: 'These sites only load part of your history into the page at a time, and the extension can only select what is loaded. Press Load more in the panel and it scrolls the list for you until everything is loaded. Very long histories can take a few minutes.',
   },
   {
+    q: 'The page keeps reloading or asks me to sign in. What do I do?',
+    text: 'The page reloaded or sent you to sign in again partway through a run, so the run stopped. This can happen on Microsoft sites when your browser blocks third-party cookies for microsoft.com, live.com or cloud.microsoft. Try deleting one chat by hand first. If that also reloads the page, sign out and back in, or allow those sites to use cookies in your browser settings, then run again. Still stuck? Email me and I will help.',
+    a: 'The page reloaded or sent you to sign in again partway through a run, so the run stopped. This can happen on Microsoft sites when your browser blocks third-party cookies for microsoft.com, live.com or cloud.microsoft. Try deleting one chat by hand first. If that also reloads the page, sign out and back in, or allow those sites to use cookies in your browser settings, then run again. Still stuck? Email me and I will help.',
+  },
+  {
     q: 'Can I get deleted chats back?',
     text: 'No. The sites delete them for good, which is why the panel asks you to confirm first. Use Stop at any time to end a run.',
     a: 'No. The sites delete them for good, which is why the panel asks you to confirm first. Use Stop at any time to end a run.',

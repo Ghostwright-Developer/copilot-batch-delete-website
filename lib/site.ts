@@ -12,6 +12,8 @@ export const SITE = {
   // Where this site is hosted. Set NEXT_PUBLIC_SITE_URL in Vercel if you use another address.
   url: (process.env.NEXT_PUBLIC_SITE_URL ?? 'https://clearcutchats.ghostwrightweb.com').replace(/\/$/, ''),
   email: 'owen@ghostwrightweb.com',
+  // Paste your Google Form link here (or set NEXT_PUBLIC_FEEDBACK_FORM_URL in Vercel). Empty = the form buttons are hidden.
+  feedbackForm: process.env.NEXT_PUBLIC_FEEDBACK_FORM_URL ?? 'https://docs.google.com/forms/d/e/1FAIpQLSebn1iYen8ZFo0rXkqIAXHhHLPfvnHFc_iaE-Sj95eNaAaAkA/viewform',
   version: '1.2.0',
   github: 'https://github.com/Cyberhawk-9/copilot-chat-deletion',
   chrome: {

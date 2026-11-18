@@ -15,10 +15,10 @@ export default function Support() {
       <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-cyan">Support</p>
       <h1 className="text-4xl font-bold">Need a hand?</h1>
       <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-        Most questions are answered below. If yours isn&apos;t, email me. I read every message.
+        Most questions are answered below. If yours isn&apos;t, email me. I&apos;m Owen, I built Clearcut Chats, and I read and reply to every message myself.
       </p>
       <div className="mt-6 rounded-2xl border border-border bg-card p-5">
-        <p className="text-sm font-semibold">Email</p>
+        <p className="text-sm font-semibold">Email Owen</p>
         <a className="text-cyan underline-offset-4 hover:underline" href={mailto('Clearcut Chats support')}>
           {SITE.email}
         </a>

@@ -145,6 +145,16 @@ const sections = [
           not use cookies, analytics or tracking.
         </p>
         <p>
+          After you remove the extension, your browser opens a short feedback page on this website. The address
+          includes only the version number (for example <code>?v=1.2.1</code>). Nothing is collected unless you
+          choose to send an email.
+        </p>
+        <p>
+          The roadmap page can link to a Google Form where you may vote on features or suggest ideas. Filling it in
+          is optional, and your answers are handled by Google under its own privacy policy. The extension itself
+          never sends anything to that form.
+        </p>
+        <p>
           The extension&apos;s share and review buttons open the Chrome Web Store or Edge Add-ons, which have
           their own privacy policies.
         </p>

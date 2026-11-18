@@ -139,3 +139,16 @@
 @keyframes aurora-c { from { transform: translate3d(-3%, -4%, 0) scale(1.0); } to { transform: translate3d(4%, 4%, 0) scale(1.1); } }
 @keyframes mist-drift { from { transform: translate3d(-6%, 0, 0); } to { transform: translate3d(14%, -4%, 0); } }
 @media (prefers-reduced-motion: reduce) { .aurora-ribbon, .aurora-mist { animation: none !important; } }
+
+/* ---- Review ring (components/site/reviews.tsx) ---- */
+.review-ring-stage { perspective: 1500px; height: calc(var(--ch, 250px) + 90px); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.review-ring { position: relative; width: var(--cw); height: var(--ch); transform-style: preserve-3d; animation: ring-spin var(--dur, 60s) linear infinite; }
+.review-ring-stage:hover .review-ring { animation-play-state: paused; }
+.review-ring-card { position: absolute; inset: 0; transform-style: preserve-3d; transform: rotateY(calc(var(--i) * 360deg / var(--n))) translateZ(var(--r)); }
+.review-face { position: absolute; inset: 0; margin: 0; padding: 1.5rem; border-radius: 1rem; backface-visibility: hidden; -webkit-backface-visibility: hidden; overflow: hidden; }
+.review-front { background: oklch(0.17 0.06 268 / 0.94); border: 1px solid oklch(1 0 0 / 0.14); box-shadow: 0 20px 50px -20px oklch(0.05 0.05 270 / 0.9); }
+.review-back { transform: rotateY(180deg); background: linear-gradient(160deg, oklch(0.30 0.10 280 / 0.75), oklch(0.20 0.07 265 / 0.75)); border: 1px solid oklch(1 0 0 / 0.12); }
+.review-ring-fallback { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+@keyframes ring-spin { from { transform: translateZ(calc(var(--r) * -1)) rotateY(0deg); } to { transform: translateZ(calc(var(--r) * -1)) rotateY(-360deg); } }
+@media (max-width: 700px) { .review-ring-stage { transform: scale(.78); margin: -20px 0; } }
+@media (prefers-reduced-motion: reduce) { .review-ring-stage { display: none; } .review-ring-fallback { position: static; width: auto; height: auto; overflow: visible; clip: auto; white-space: normal; display: grid; } }
